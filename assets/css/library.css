@@ -1,0 +1,10 @@
+.library-item{
+  width: 400px;
+}
+.library-item .library-video-poster img{
+  width: 100%;
+} 
+
+.library-video-poster img{
+  border-radius: 5px;
+}

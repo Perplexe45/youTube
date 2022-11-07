@@ -4,44 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Youtube/assets/css/main.css">
-    <link rel="shortcut icon" href="./assets/images/youtube-logo.svg">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="./assets/images/YouTube-Logo.wine.svg">
     <script src="https://kit.fontawesome.com/6ddde329a5.js" crossorigin="anonymous"></script>
     <title>ouiTube</title>
 </head>
 <body>
-    <header>
-        <div class="header-top flex">
-            <div class="header-top-left flex-1">
-                <div class="header-icon">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <a href="#"></a>
-                    <div class="logo">
-                        <img src="/assets/images/YouTube-Logo.wine.svg" width="100" alt="">
-                    </div>
-            </div>
-            <div class="header-top-center flex-3">
-                <div class="search-bar">
-                    <input type="search">
-                    <i class="fas fa-search"></i></a>
-                </div>
-             </div>
-             <div class="header-top-right flex-1">
-                <a href="#"><i class="fas fa-bell"></i></a>
-                <a href="#"><i class="fas fa-arrow-circle-up"></i></a>   
-                <a href="#"><i class="fas fa-user-circle"></i></a>
-             </div>
+  <header>
+    <div class="header-top box flex">
+      <div class="header-top-left flex flex-1  flex-center-v">
+          <div class="header-icon" id="collapse">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+          <a href="#"></a>
+              <div class="logo">
+                  <img src="/assets/images/YouTube-Logo.wine.svg" width="100" alt="">
+                  <img src="/assets/images/youtube-logo.svg" alt="">
+              </div>
+      </div>
+      <div class="header-top-center flex flex-3 flex-center-v flex-center-h">
+          <input type="search" placeholder="Rechercher">
+          <i class="fas fa-search"></i></a>
+      </div>
+        <div class="header-top-right flex flex-1 flex-center-v flex-center-h">
+          <a href="#" class="flex-1 text-center" ><i class="fas fa-bell"></i></a>
+          <a href="#" class="flex-1 text-center" ><i class="fas fa-arrow-circle-up"></i></a>   
+          <a href="#" class="flex-1 text-center" ><i class="fas fa-user-circle"></i></a>
         </div>
-         
-         
-        
-        <nav class="header-left">
-
-        </nav>
-    </header>
-    <div class="container-home">CONTAINER-HOME</div>
+    </div>
+    <nav class="header-left fixed box" id="menu">
+      <ul class="ChoiceMenu">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Biblothéque</a></li>
+        <li><a href="#">Compte</a></li>
+        <li><a href="#">Vidéos</a></li>
+        <li><a href="#">Mettre en ligne</a></li>
+        <li><a href="#">Se connecter</a></li>
+        <li><a href="#">S'inscrire</a></li>
+      </ul>
+    </nav v>
+  </header>
+    <div class="container-home-xl">CONTAINER-HOME
+      <div class="library-item flex flex-column">
+        <div class="library-video-poster">
+          <img src="./assets/images/poster/1.png" alt="poster-video1">
+        </div>
+        <div class="library-video-meta flex">
+          <div class="profile-picture">
+            <img src="./assets/images/Gerland.jpg" alt="">
+          </div>
+          <div class="video-meta">
+            <div class="video-title">Clonez le réseau social facebook enpartant de zéro</div>
+            <div class="owner-video-fullname">Web Design</div>
+            <div class="video-meta-data">
+              <div class="video-meta-view">542 vues</div>
+              <div class="video-meta-time">Il y a 21 heures</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>FOOTER</footer>
-    
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
