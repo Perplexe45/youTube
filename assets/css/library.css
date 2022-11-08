@@ -1,10 +1,49 @@
 .library-item{
-  width: 400px;
+  width: 380px;
+  cursor: pointer;
 }
+.library-item:hover{
+ background: #eadddd;
+ border-radius: 20px;
+}
+
 .library-item .library-video-poster img{
   width: 100%;
+  height: 250px;
+  border-radius: 20px;
+} 
+.video-title{
+  font-weight: bold;
+}
+
+.owner-video-fullname, .video-meta-data {
+  color: gray;
+}  
+
+.owner-video-fullname:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.video-meta-views::after{
+  content: " . ";
 } 
 
-.library-video-poster img{
-  border-radius: 5px;
+.library-video-meta{
+  height:100px;
+}
+.video-meta-data{
+  color: gray;
+}
+.video-meta-data:hover{
+  font-size: 1.1rem; 
+  font-weight: bold; 
+}
+.library-item .fa-youtube{
+  color: red;
+  font-size: 2.2rem;
+}
+.library-item .fa-youtube:hover{
+ color: white;
+ font-size: 3rem
 }

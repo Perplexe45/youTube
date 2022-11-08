@@ -5,82 +5,89 @@ body {
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
  .flex-column{
-    flex-direction: column;
+  flex-direction: column;
  }
  .flex-row{
-    flex-direction: row;
+  flex-direction: row;
  }
+  .wrap{
+  flex-wrap: wrap;
+ }
+ .nowrap{
+  flex-wrap: nowrap;
+ }
+
  .flex-center-h{
-    justify-content: center;
+  justify-content: center;
  }
  .flex-center-v{
-    align-items: center;
+  align-items: center;
  }
  .text-center{
-    text-align: center;
+  text-align: center;
  }
 .flex-1{
-    flex: 1;
+  flex: 1;
 }
 .flex-2{
-    flex: 2;
+  flex: 2;
 }
 .flex-3{
-    flex: 3;
+  flex: 3;
 }
 .flex-4{
-    flex: 4;
+  flex: 4;
 }
 .flex-5{
-    flex: 5;
+  flex: 5;
 }
 .gap-5{
-    gap: 5;
+  gap: 5px;
 }
 .gap-10{
-    gap: 10;
+  gap: 10px;
 }
 .gap-15{
-    gap: 15;
+  gap: 15px;
 }
 .gap-20{
-    gap: 20;
+  gap: 20px;
 }
 input, select, textarea{
-    outline: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    border: 0.1 px solid #ccc;
-    background-color: #efefef;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  border: 0.1 px solid #ccc;
+  background-color: #efefef;
 }
 a{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 ul{
-    margin: 0;
-    cursor: pointer;
-    padding: 0;
+  margin: 0;
+  cursor: pointer;
+  padding: 0;
 }
 button{
-    cursor: pointer;
+  cursor: pointer;
 }
 
 i{
-    color: #ccc;
-    font-size: 1.22rem;
-    cursor: pointer;
+  color: #ccc;
+  font-size: 1.22rem;
+  cursor: pointer;
 }
 
 i:hover {
-    color: crimson;
+  color: crimson;
 }
 
 .box{
-    box-shadow: 0px 4px 8px rgb(0 0 0/10%), 0px 12px 18px rgb(0 0 0/10%);
+  box-shadow: 0px 4px 8px rgb(0 0 0/10%), 0px 12px 18px rgb(0 0 0/10%);
 }
 
 .fixed{
@@ -99,5 +106,49 @@ i:hover {
 [class$="-xl"]{
   width: 80%;
   margin: 20px auto;
+  }
 
+.center-element{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+.paginate{
+  margin: 20px 0;
+}
+
+.paginate-item{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: red;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.paginate-item:hover{
+  font-size: 1.3rem;
+  
+}
+
+.paginate-item.active{
+  background-color: gray;
+}
+
+@media screen and(max-width: 900px) {
+  [class$="-xl"]{
+      width: 90%;
+      margin: 20px auto;
+    }
+}
+
+@media screen and(max-width: 650px) {
+    [class$="-xl"]{
+        width: 95;
+        margin: 20px auto;
+      }
+}
+
+
