@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="shortcut icon" href="./assets/images/YouTube-Logo.wine.svg">
     <script src="https://kit.fontawesome.com/6ddde329a5.js" crossorigin="anonymous"></script>
     <title>ouiTube</title>
 </head>
+
 <body>
-  <header>
+  <header class="sticky">
     <div class="header-top box flex">
       <div class="header-top-left flex flex-1  flex-center-v">
           <div class="header-icon" id="collapse">
@@ -33,7 +34,7 @@
         </div>
     </div>
     <nav class="header-left fixed box" id="menu">
-      <ul class="ChoiceMenu">
+      <ul>
         <li><a href="#">Accueil</a></li>
         <li><a href="#">Biblothéque</a></li>
         <li><a href="#">Compte</a></li>
@@ -44,7 +45,7 @@
       </ul>
     </nav v>
   </header>
-    <div class="container-home-xl">CONTAINER-HOME
+    <div class="container-home-xl">
       <div class="library-items flex wrap gap-10 flex-center-h">
         <div class="library-item flex flex-column">
           <div class="library-video-poster relative">
@@ -217,6 +218,63 @@
             </div>
           </div>
         </div>
+        <div class="library-item flex flex-column">
+          <div class="library-video-poster relative">
+            <img src="./assets/images/poster/10.png" alt="poster-video1">
+            <i class="fab fa-youtube absolute center-element"></i>
+          </div>
+          <div class="library-video-meta flex flex-center-v gap-5">
+            <div class="profile-picture">
+              <img src="./assets/images/Avatar_Alain.jpg" alt="">
+            </div>
+            <div class="video-meta">
+              <div class="video-title">Une émission encore digne de la regarder ?.</div>
+              <div class="owner-video-fullname">Web Design</div>
+              <div class="video-meta-data flex">
+                <div class="video-meta-views">542 vues</div>
+                <div class="video-meta-time">Il y a 21 heures</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="library-item flex flex-column">
+          <div class="library-video-poster relative">
+            <img src="./assets/images/poster/11.png" alt="poster-video1">
+            <i class="fab fa-youtube absolute center-element"></i>
+          </div>
+          <div class="library-video-meta flex flex-center-v gap-5">
+            <div class="profile-picture">
+              <img src="./assets/images/Avatar_Alain.jpg" alt="">
+            </div>
+            <div class="video-meta">
+              <div class="video-title">Des personnes appeurées suite à un malentendu.</div>
+              <div class="owner-video-fullname">Web Design</div>
+              <div class="video-meta-data flex">
+                <div class="video-meta-views">542 vues</div>
+                <div class="video-meta-time">Il y a 21 heures</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="library-item flex flex-column">
+          <div class="library-video-poster relative">
+            <img src="./assets/images/poster/12.png" alt="poster-video1">
+            <i class="fab fa-youtube absolute center-element"></i>
+          </div>
+          <div class="library-video-meta flex flex-center-v gap-5">
+            <div class="profile-picture">
+              <img src="./assets/images/Avatar_Alain.jpg" alt="">
+            </div>
+            <div class="video-meta">
+              <div class="video-title">Un tuto pour apprndre le fameux logiciel "OBS".</div>
+              <div class="owner-video-fullname">Web Design</div>
+              <div class="video-meta-data flex">
+                <div class="video-meta-views">542 vues</div>
+                <div class="video-meta-time">Il y a 21 heures</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="paginate flex flex-center-h gap-10">
         <div class="paginate-item flex flex-center-h flex-center-v">&lt;</div>
@@ -226,8 +284,100 @@
       </div>
     </div>
 
+    <footer>
+      <div class="footer-header flex flex-center-h flex-center-v gap-10">
+        <i class="fab fa-youtube" logo></i>
+        <h5>OuiTube</h5>
+      </div>
+      <div class="footer-content footer-content-m">
+        <div class="footer-menu-lists flex flex-center gap-10 flex-1">
+          <div class="menu-lists-item flex-1 ">
+            <h5>Product</h5>
+            <div class="menu-list">
+              <ul>
+                <li><a href="#">Video player</a></li>
+                <li><a href="#">Create</a></li>
+                <li><a href="#">Live Streaming</a></li>
+                <li><a href="#">Screen Recorder</a></li>
+                <li><a href="#">Collaboration</a></li>
+                <li><a href="#">Monetization</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-lists-item flex-1 ">
+            <h5>Ressources</h5>
+            <div class="menu-list">
+              <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Video School</a></li>
+                <li><a href="#">OTT Ressources</a></li>
+                <li><a href="#">Developpers</a></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-lists-item flex-1 ">
+            <h5>Affiliate</h5>
+            <div class="menu-list">
+              <ul>
+                <li><a href="#">Become a partner</a></li>
+                <li><a href="#">Guidelines</a></li>
+                <li><a href="#">Live Streaming</a></li>
+                <li><a href="#">Hosting & Management</a></li>
+                <li><a href="#">Collaboration</a></li>
+                <li><a href="#">Monetization</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-lists-item flex-1 ">
+            <h5>Quick</h5>
+            <div class="menu-list">
+              <ul>
+                <li><a href="#">Live Streaming</a></li>
+                <li><a href="#">Video Player</a></li>
+                <li><a href="#">Screen recorder</a></li>
+                <li><a href="#">Monetization</a></li>
+                <li><a href="#">Create</a></li>
+                <li><a href="#">Collaboration</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-lists-item flex-1 ">
+            <h5>Contact</h5>
+            <div class="menu-list">
+              <ul>
+                <li><a href="#">Become a Partner</a></li>
+                <li><a href="#">Guidelines</a></li>
+                <li><a href="#">Live Streaming</a></li>
+                <li><a href="#">Hosting & Management</a></li>
+                <li><a href="#">Monetization</a></li>
+                <li><a href="#">Collaboration</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    <footer>FOOTER</footer>
-    <script src="./assets/js/script.js"></script>
+        <div class="footer-social-icon flex">
+          <div class="social-icon flex-1">
+            <ul class="flex flex-center-v gap-5">
+              <li><a href="#"><i class="fab fa-facebook" ></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter" ></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube" ></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin" ></i></a></li>
+            </ul>
+          </div>
+          <div class="app-icon flex-1">
+            <a href="#"><img src="./assets/images/logo/playstore.png" style="width: 150px;" alt=""></a>
+            <a href="#"><img src="./assets/images/logo/applestore.png" style="width: 150px;" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom flex flex-center-h flex-center-v">
+        Copyright &copy; 2021 Anonymous All Rights Reserved
+      </div>
+    </footer> 
+    
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>

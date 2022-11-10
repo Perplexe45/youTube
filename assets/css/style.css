@@ -1,6 +1,12 @@
 /* header{
     background-color: rgb(207, 227, 110);
 } */
+header{
+  top: 0;
+  z-index: 2222;
+  background-color: white;
+}
+
 .header-top{
   height: 70px;
 }

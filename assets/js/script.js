@@ -1,6 +1,7 @@
-window.onload = ()=> { /*La page entièrement chargé*/ 
+  window.onload = ()=> { /*La page entièrement chargé*/ 
   let collapse = document.getElementById("collapse");
-  let menu=document.getElementById("menu")//icone sandwich
+  let menu=document.getElementById("menu");//icone sandwich
+  const nav=document.querySelector("nav");
 
   if (collapse) { //
     collapse.addEventListener("click", ()=>{
@@ -8,7 +9,8 @@ window.onload = ()=> { /*La page entièrement chargé*/
       if(menu.style.display === "block"){
         menu.style.display = "none"
       }else{
-        menu.style.display = "block"
+        menu.style.display = "block";
+        nav.style.top = "70px";
       }
     })
 
